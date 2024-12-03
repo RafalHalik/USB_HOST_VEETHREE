@@ -38,13 +38,13 @@ typedef struct vg_lite_os_async_event
 }
 vg_lite_os_async_event_t;
 
-typedef struct vg_lite_queue{
-    uint32_t  cmd_physical;
-    uint32_t  cmd_offset;
-    uint32_t  cmd_size;
-    vg_lite_os_async_event_t *event;
-}
-vg_lite_queue_t;
+// typedef struct vg_lite_queue{
+//     uint32_t  cmd_physical;
+//     uint32_t  cmd_offset;
+//     uint32_t  cmd_size;
+//     vg_lite_os_async_event_t *event;
+// }
+// vg_lite_queue_t;
 
 enum _osa_status
 {
@@ -75,13 +75,13 @@ struct event_handle {
 // #define osa_msg_handle_t struct data_item_type *
 
 // #define osa_msgq_handle_t struct k_msgq *
-// typedef struct vg_lite_queue{
-//     uint32_t  cmd_physical;
-//     uint32_t  cmd_offset;
-//     uint32_t  cmd_size;
-//     vg_lite_os_async_event_t *event;
-// }
-// vg_lite_queue_t;
+typedef struct vg_lite_queue{
+    uint32_t  cmd_physical;
+    uint32_t  cmd_offset;
+    uint32_t  cmd_size;
+    vg_lite_os_async_event_t *event;
+}
+vg_lite_queue_t;
 
 typedef struct k_sem* osa_semaphore_handle_t;
 

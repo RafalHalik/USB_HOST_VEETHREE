@@ -14,7 +14,7 @@
 #include "fsl_component_generic_list.h"
 
 #if defined(OSA_USED)
-#include "fsl_os_abstraction.h"
+#include "fsl_os_abstraction_zephyr.h"
 #if (defined(USE_RTOS) && (USE_RTOS > 0U))
 #define LIST_ENTER_CRITICAL() \
     OSA_SR_ALLOC();           \

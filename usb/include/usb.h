@@ -11,7 +11,7 @@
 
 #include <stdint.h>
 #include <stdio.h>
-#include "fsl_os_abstraction.h"
+#include "fsl_os_abstraction_zephyr.h"
 #include "fsl_common.h"
 #include "usb_misc.h"
 #include "usb_spec.h"
