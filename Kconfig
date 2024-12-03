@@ -1,0 +1,5 @@
+
+config USB_HOST_VEETHREE
+    bool "USB host support for updating firmware via veethree usb update app"
+    help    
+      This option enables custom USB host stack to enable usb updates for veethree boards.
