@@ -29,3 +29,8 @@ usb/phy/usb_phy.c
 osa/fsl_os_abstraction_zephyr.c
 
 )
+
+zephyr_library_link_libraries(USB_HOST_VEETHREE)
+target_link_libraries(USB_HOST_VEETHREE INTERFACE zephyr_interface)
+
+endif()
