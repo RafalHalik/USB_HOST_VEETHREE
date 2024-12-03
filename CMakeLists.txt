@@ -12,6 +12,7 @@ zephyr_include_directories(usb/host)
 zephyr_include_directories(usb/phy)
 zephyr_include_directories(usb/host/class)
 zephyr_include_directories(osa)
+zephyr_include_directories(lists)
 
 
 zephyr_library_sources(
@@ -28,6 +29,7 @@ usb/phy/usb_phy.c
 
 osa/fsl_os_abstraction_zephyr.c
 
+lists/fsl_component_generic_list.c
 )
 
 zephyr_library_link_libraries(USB_HOST_VEETHREE)
