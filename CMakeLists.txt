@@ -15,6 +15,7 @@ zephyr_include_directories(osa)
 zephyr_include_directories(lists)
 
 
+
 zephyr_library_sources(
 
 usb/host/class/usb_host_hub_app.c
